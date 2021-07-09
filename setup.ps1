@@ -6,7 +6,7 @@ mkdir .scrtmp
 Set-Location C:\Users\Aaxyat\.scrtmp\
 
 # Download Script.ps1
-Invoke-WebRequest --UseBacicParsing -outf Script.ps1 "https://raw.githubusercontent.com/aaxyat/Scripts/master/Script.ps1"
+Invoke-WebRequest --UseBacicParsing -outf Script.ps1 https://raw.githubusercontent.com/aaxyat/Scripts/master/Script.ps1
 
 
 #To Force The File to run as Admin

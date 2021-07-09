@@ -2,7 +2,7 @@
 Set-Location C:\Users\Aaxyat\.scrtmp\
 
 # Download Powershell Profile and save to profile
-Invoke-WebRequest --UseBacicParsing -outf Microsoft.PowerShell_profile.ps1 "https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1"
+Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1
 Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 #install Chocolaty
@@ -12,4 +12,4 @@ Set-ExecutionPolicy Unrestricted -Scope Process -Force; [System.Net.ServicePoint
 choco install -y gsudo adb youtube-dl microsoft-windows-terminal
 
 #Download and install ninite 
-Invoke-WebRequest --UseBacicParsing -outf ninite.exe "http://files.ayushb.com/ninite.exe"
+Invoke-WebRequest -outf ninite.exe http://files.ayushb.com/ninite.exe
