@@ -20,6 +20,7 @@ function shortcuts{
     Write-Output "listvenv => List all Virtualenv"
     Write-Output "removevenv => remove given virtualenv"
     Write-Output "workon => workon The given Venv"
+    Write-Output "acp => Add Comit and push. Send a comit String as Argument"
 }
 function cd.. {
     Set-Location ..
@@ -52,7 +53,7 @@ function workon {
 }
 
 #git Stuff
-function acm {
+function acp {
     Set-Location $PWD
     git add . 
     git commit -m $args
