@@ -51,7 +51,7 @@ function workon {
     & $d
 }
 
-
+#Git Stuff
 
 
 #This is Conda environment If I ever need to use conda 
