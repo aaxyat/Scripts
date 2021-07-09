@@ -24,7 +24,7 @@ Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.Wind
 #Download and install ninite 
 Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/Ninite.exe
 ./ninite.exe
-Start-Sleep -Seconds 2
+Start-Sleep -Seconds 5
 Wait-Process Ninite.exe
 
 
