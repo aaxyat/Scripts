@@ -51,7 +51,16 @@ function workon {
     & $d
 }
 
-#Git Stuff
+#git Stuff
+function acm {
+    Set-Location $PWD
+    git add . 
+    git commit -m $args
+    git push -u github master
+    
+    
+}
+
 
 
 #This is Conda environment If I ever need to use conda 
