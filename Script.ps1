@@ -5,6 +5,7 @@ Set-Location C:\Users\Aaxyat\.scrtmp\
 
 Install-Module oh-my-posh
 Install-Module posh-git
+Install-Module PSReadLine -RequiredVersion 2.1.0
 
 # Download Powershell Profile and save to profile
 Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1
@@ -23,7 +24,9 @@ Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.Wind
 #Download and install ninite 
 Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/Ninite.exe
 ./ninite.exe
+Start-Sleep -Seconds 2
 Wait-Process Ninite.exe
+
 
 #Remove TMP and Clean Everything
 Set-Location C:\Users\Aaxyat
