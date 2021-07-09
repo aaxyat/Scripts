@@ -21,12 +21,12 @@ Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.Wind
 
 
 #Download and install ninite 
-Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/ninite.exe
+Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/Ninite.exe
 ./ninite.exe
-
+Wait-Process Ninite.exe
 
 #Remove TMP and Clean Everything
 Set-Location C:\Users\Aaxyat
-Remove-Item -Recurse -Force .\scrtmp\
+Remove-Item -Recurse -Force .\.scrtmp\
 
 
