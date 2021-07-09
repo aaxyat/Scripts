@@ -1,8 +1,13 @@
 # Cd to Temp Directory
 Set-Location C:\Users\Aaxyat\.scrtmp\
 
+#install module
+
+Install-Module oh-my-posh
+Install-Module posh-git
+
 # Download Powershell Profile and save to profile
-Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1
+Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1
 Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 #install Chocolaty
