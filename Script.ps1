@@ -25,9 +25,8 @@ Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.Wind
 Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/Ninite.exe
 ./ninite.exe
 Clear-Host
-Write-Output "Please press Any key after Ninite Setup finishes"
-$HOST.UI.RawUI.ReadKey(“NoEcho,IncludeKeyDown”) | OUT-NULL
-$HOST.UI.RawUI.Flushinputbuffer()
+
+Read-Host -Prompt "Please press Any key after Ninite Setup finishes"
 
 #Remove TMP and Clean Everything
 Set-Location C:\Users\Aaxyat
