@@ -4,11 +4,23 @@ Set-PoshPrompt -Theme Paradox
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 
+Write-Output "type 'shortcuts' to see all Shortcuts"
 # All The alias Below This Line 
 # Aliases
 
 
 #Alias Function
+#List All Sortcuts
+
+function shortcuts{
+    Write-Output "refresh => reload Profile"
+    Write-Output "cd.. => cd .."
+    Write-Output "code => code-insiders"
+    Write-Output "createvenv => create a New virtualenv"
+    Write-Output "listvenv => List all Virtualenv"
+    Write-Output "removevenv => remove given virtualenv"
+    Write-Output "workon => workon The given Venv"
+}
 function cd.. {
     Set-Location ..
     
@@ -16,6 +28,7 @@ function cd.. {
 function code {
     code-insiders $args
 }
+
 
 # Virtualenv
 function createvenv{
@@ -37,6 +50,10 @@ function workon {
     $d = "C:\Users\Aaxyat\envs\"+$args+"\Scripts\Activate.ps1"
     & $d
 }
+
+
+
+
 #This is Conda environment If I ever need to use conda 
 # function create-env {
 #     conda create --name $args python 
@@ -51,7 +68,7 @@ function workon {
 #     conda env remove -n $args
 # }
 
-#testing
-function test {
-    echo "Test"
+
+function refresh{
+    . $profile
 }
