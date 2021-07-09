@@ -24,9 +24,10 @@ Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.Wind
 #Download and install ninite 
 Invoke-WebRequest -outf ninite.exe -Uri http://files.ayushb.com/Ninite.exe
 ./ninite.exe
-Start-Sleep -Seconds 5
-Wait-Process Ninite.exe
-
+Clear-Host
+Write-Output "Please press Any key after Ninite Setup finishes"
+$HOST.UI.RawUI.ReadKey(“NoEcho,IncludeKeyDown”) | OUT-NULL
+$HOST.UI.RawUI.Flushinputbuffer()
 
 #Remove TMP and Clean Everything
 Set-Location C:\Users\Aaxyat
