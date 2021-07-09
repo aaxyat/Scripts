@@ -30,6 +30,5 @@ Read-Host -Prompt "Please press Any key after Ninite Setup finishes"
 
 #Remove TMP and Clean Everything
 Set-Location C:\Users\Aaxyat
-Remove-Item -Recurse -Force .\.scrtmp\
-
+Remove-Item -Recurse -Force ~\.scrtmp\
 
