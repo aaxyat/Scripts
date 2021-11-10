@@ -15,7 +15,7 @@ Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPo
 Set-ExecutionPolicy Unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 #install Chocolatry Items
-choco install -y gsudo adb youtube-dl #microsoft-windows-terminal
+choco install -y gsudo adb youtube-dl git  #microsoft-windows-terminal
 #Restore Windows Terminal Settings
 Invoke-WebRequest -outf .\settings.json -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/settings.json
 Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
