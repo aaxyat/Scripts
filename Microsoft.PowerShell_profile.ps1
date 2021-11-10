@@ -15,7 +15,6 @@ Write-Output "type 'shortcuts' to see all Shortcuts"
 function shortcuts{
     Write-Output "refresh => reload Profile"
     Write-Output "cd.. => cd .."
-    Write-Output "code => code-insiders"
     Write-Output "createvenv => create a New virtualenv"
     Write-Output "listvenv => List all Virtualenv"
     Write-Output "removevenv => remove given virtualenv"
@@ -26,9 +25,7 @@ function cd.. {
     Set-Location ..
     
 }
-function code {
-    code-insiders $args
-}
+
 
 
 # Virtualenv
