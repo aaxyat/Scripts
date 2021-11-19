@@ -17,8 +17,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #install Chocolatry Items
 choco install -y gsudo adb youtube-dl git  #microsoft-windows-terminal
 #Restore Windows Terminal Settings
-Invoke-WebRequest -outf .\settings.json -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/settings.json
-Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+Invoke-WebRequest -outf .\settings.json -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/settings.json; rm C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json; Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 
 
 #Download and install ninite 
