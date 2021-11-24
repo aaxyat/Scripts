@@ -3,8 +3,8 @@ Set-Location C:\Users\Aaxyat\.scrtmp\
 
 #install module
 
-Install-Module oh-my-posh
 Install-Module posh-git
+Install-Module oh-my-posh
 Install-Module PSReadLine -RequiredVersion 2.1.0
 
 # Download Powershell Profile and save to profile
