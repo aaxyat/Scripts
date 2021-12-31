@@ -3,13 +3,11 @@ Set-Location C:\Users\Aaxyat\.scrtmp\
 
 #install module
 
-Install-Module posh-git
-Install-Module oh-my-posh
-Install-Module PSReadLine -RequiredVersion 2.1.0
+Install-Module posh-git; Install-Module oh-my-posh; Install-Module PSReadLine -RequiredVersion 2.1.0; Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1; Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
 
 # Download Powershell Profile and save to profile
-Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1
-Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1; Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 #install Chocolaty
 Set-ExecutionPolicy Unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
