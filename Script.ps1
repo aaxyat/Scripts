@@ -1,5 +1,8 @@
 # Cd to Temp Directory
 Set-Location C:\Users\Aaxyat\.scrtmp\
+#test
+Install-Module posh-git; Install-Module oh-my-posh; Install-Module PSReadLine -RequiredVersion 2.1.0; Invoke-WebRequest -outf Microsoft.PowerShell_profile.ps1 -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/Microsoft.PowerShell_profile.ps1; Move-Item .\Microsoft.PowerShell_profile.ps1 C:\Users\Aaxyat\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1; Set-ExecutionPolicy Unrestricted -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')); choco install -y gsudo adb youtube-dl git; Invoke-WebRequest -outf .\settings.json -Uri https://raw.githubusercontent.com/aaxyat/Scripts/master/settings.json; rm C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json; Move-Item .\settings.json  C:\Users\Aaxyat\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+ 
 
 #install module
 
