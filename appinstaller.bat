@@ -26,4 +26,4 @@ if '%errorlevel%' NEQ '0' (
 
 ::ENTER YOUR CODE BELOW:
 
-choco install -y python viber vscode windirstat epicgameslauncher googlechrome termius telegram steam-client notepadplusplus.install gsudo git starship 7zip thunderbird discord vlc mpv teracopy qbittorrent dotnet3.5 dotnet-runtime rclone yt-dlp k-litecodecpackfull choco-upgrade-all-at-startup revo-uninstaller googledrive adb universal-adb-drivers firacode
+choco install -y python viber vscode windirstat epicgameslauncher googlechrome winfsp telegram steam-client notepadplusplus.install gsudo git starship 7zip thunderbird discord vlc mpv teracopy qbittorrent rclone yt-dlp k-litecodecpackfull choco-upgrade-all-at-startup revo-uninstaller googledrive adb firacode
