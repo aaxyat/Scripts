@@ -26,4 +26,4 @@ if '%errorlevel%' NEQ '0' (
 
 ::ENTER YOUR CODE BELOW:
 
-choco install -y viber vscode mpv rclone adb firacode
+choco install -y python autohotkey vscode windirstat winfsp nssm brave epicgameslauncher termius telegram steam-client notepadplusplus.install gsudo git starship 7zip thunderbird discord vlc mpv teracopy qbittorrent dotnet-runtime rclone yt-dlp k-litecodecpackfull choco-upgrade-all-at-startup revo-uninstaller googledrive adb  firacode autohotkey nodejs.install curl spotify 
